@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Erp.Services.BO.CRTI_MiscAction", "Erp.Services.BO.CRTI_MiscAction.csproj", "{D584218C-3F2D-4F15-B4DA-1169BB1FD941}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Erp.Adapters.CRTI_MiscAction", "..\..\..\..\client\Adapters\CRTI_MiscAction\Erp.Adapters.CRTI_MiscAction.csproj", "{FA015175-E2B1-43E1-A372-8379D131C9A2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Erp.Contracts.BO.CRTI_MiscAction", "..\..\..\..\shared\Contracts\BO\CRTI_MiscAction\Erp.Contracts.BO.CRTI_MiscAction.csproj", "{BE1CDFE6-03B8-427B-90F9-E8146263CAAE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D584218C-3F2D-4F15-B4DA-1169BB1FD941}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D584218C-3F2D-4F15-B4DA-1169BB1FD941}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D584218C-3F2D-4F15-B4DA-1169BB1FD941}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D584218C-3F2D-4F15-B4DA-1169BB1FD941}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA015175-E2B1-43E1-A372-8379D131C9A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA015175-E2B1-43E1-A372-8379D131C9A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA015175-E2B1-43E1-A372-8379D131C9A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA015175-E2B1-43E1-A372-8379D131C9A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE1CDFE6-03B8-427B-90F9-E8146263CAAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE1CDFE6-03B8-427B-90F9-E8146263CAAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE1CDFE6-03B8-427B-90F9-E8146263CAAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE1CDFE6-03B8-427B-90F9-E8146263CAAE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://concerti.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Erp.Services.BO.CRTI_MiscAction.csproj
+		SccLocalPath1 = .
+		SccProjectUniqueName2 = ..\\..\\..\\..\\client\\Adapters\\CRTI_MiscAction\\Erp.Adapters.CRTI_MiscAction.csproj
+		SccProjectName2 = ../../../../client/Adapters/CRTI_MiscAction
+		SccLocalPath2 = ..\\..\\..\\..\\client\\Adapters\\CRTI_MiscAction
+		SccProjectUniqueName3 = ..\\..\\..\\..\\shared\\Contracts\\BO\\CRTI_MiscAction\\Erp.Contracts.BO.CRTI_MiscAction.csproj
+		SccProjectName3 = ../../../../shared/Contracts/BO/CRTI_MiscAction
+		SccLocalPath3 = ..\\..\\..\\..\\shared\\Contracts\\BO\\CRTI_MiscAction
+	EndGlobalSection
+EndGlobal

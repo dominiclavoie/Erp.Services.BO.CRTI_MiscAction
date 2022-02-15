@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Erp.BO.CRTI_MiscAction</RootNamespace>
+    <AssemblyName>Erp.Services.BO.CRTI_MiscAction</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <WarningsAsErrors>1570,1572,1573</WarningsAsErrors>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <ProjectGuid>{D584218C-3F2D-4F15-B4DA-1169BB1FD941}</ProjectGuid>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\..\..\..\..\Server\Server\Assemblies\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\..\..\Deployment\Server\Assemblies\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <DocumentationFile>..\..\..\..\..\Deployment\Server\Assemblies\Erp.Services.BO.CRTI_MiscAction.XML</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="MiscActions\DataSetConverter.cs" />
+    <Compile Include="MiscActions\GestionFermetureJob\OpenJobToJobCollection.cs" />
+    <Compile Include="MiscActions\GestionFermetureJob\OpenJobToJob.cs" />
+    <Compile Include="MiscActions\GestionFermetureJob\OpenJobInventory.cs" />
+    <Compile Include="MiscActions\GestionFermetureJob\OpenJobOrder.cs" />
+    <Compile Include="MiscActions\GestionFermetureJob\OpenJobInventoryCollection.cs" />
+    <Compile Include="MiscActions\GestionFermetureJob\OpenJobOrderCollection.cs" />
+    <Compile Include="MiscActions\GestionFermetureJob\OpenJobOrderGroup.cs" />
+    <Compile Include="MiscActions\GestionOperation.cs" />
+    <Compile Include="MiscActions\GestionReservationWIP.cs" />
+    <Compile Include="MiscActions\GestionReception.cs" />
+    <Compile Include="MiscActions\GestionJobBatch.cs" />
+    <Compile Include="MiscActions\GestionFermetureJob\GestionCommandeBT.cs" />
+    <Compile Include="MiscActions\GestionSuiviHeures\Day.cs" />
+    <Compile Include="MiscActions\GestionSuiviHeures\DayCollection.cs" />
+    <Compile Include="MiscActions\GestionSuiviHeures\GestionSuiviHeures.cs" />
+    <Compile Include="MiscActions\GestionSuiviHeures\LaborHours.cs" />
+    <Compile Include="MiscActions\GestionSuiviHeures\LaborHoursCollection.cs" />
+    <Compile Include="MiscActions\IMiscAction.cs" />
+    <Compile Include="MiscActions\JobBatch\JobBatchMOD\IJobBatchMOD.cs" />
+    <Compile Include="MiscActions\JobBatch\JobBatchMOD\JobBatchMODMelange.cs" />
+    <Compile Include="MiscActions\JobBatch\JobBatchMOD\JobBatchMODAssemblage.cs" />
+    <Compile Include="MiscActions\JobBatch\JobBatchMOD\JobBatchMODUsinage.cs" />
+    <Compile Include="MiscActions\JobBatch\JobBatchMOD\JobBatchMODVolvo.cs" />
+    <Compile Include="MiscActions\JobBatch\JobBatchMOD\JobBatchMODProfileBrut.cs" />
+    <Compile Include="MiscActions\JobBatch\JobBatchMOD\JobBatchMODVRODDroite.cs" />
+    <Compile Include="MiscActions\JobBatch\JobBatchProduction\JobBatchProductionMelange.cs" />
+    <Compile Include="MiscActions\JobBatch\JobBatchProduction\JobBatchProductionAssemblage.cs" />
+    <Compile Include="MiscActions\JobBatch\JobBatchProduction\JobBatchProductionUsinage.cs" />
+    <Compile Include="MiscActions\JobBatch\JobBatchProduction\JobBatchProductionVolvo.cs" />
+    <Compile Include="MiscActions\JobBatch\JobBatchProduction\JobBatchProductionProfileBrut.cs" />
+    <Compile Include="MiscActions\JobBatch\JobBatchProduction\JobBatchProductionVRODDroite.cs" />
+    <Compile Include="MiscActions\JobBatch\JobBatchProduction\IJobBatchProduction.cs" />
+    <Compile Include="MiscActions\JobBatch\ReceiptFromMfgController.cs" />
+    <Compile Include="MiscActions\GestionLotProduction.cs" />
+    <Compile Include="MiscActions\GestionJobUsinage.cs" />
+    <Compile Include="MiscActions\JobManager\IJobManagerElements.cs" />
+    <Compile Include="MiscActions\JobManager\ScheduleEngineController.cs" />
+    <Compile Include="MiscActions\JobManager\JobEntryController.cs" />
+    <Compile Include="MiscActions\JobManager\JobStatusController.cs" />
+    <Compile Include="MiscActions\GestionConsommationMatiere.cs" />
+    <Compile Include="MiscActions\StockProfileBrut.cs" />
+    <Compile Include="MiscActions\PostMRP.cs" />
+    <Compile Include="MiscActions\PostMRP\BaseService.cs" />
+    <Compile Include="MiscActions\JobManager\JobManagerController.cs" />
+    <Compile Include="MiscActions\JobBatch\ValidationJobBatch.cs" />
+    <Compile Include="MiscActions\StringFinder.cs" />
+    <Compile Include="MiscActions\Translate.cs" />
+    <Compile Include="MiscActions\OperationInteraction.cs" />
+    <Compile Include="MiscActions\_Exemple.cs" />
+    <Compile Include="CRTI_MiscActionSvcFacade.cs" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Sprocs\_ZFW_CRTI_MiscActionCompany_GetBySysRowID.sql" />
+    <None Include="Sprocs\_ZFW_CRTI_MiscAction_GetByID.sql" />
+    <None Include="Sprocs\_ZFW_CRTI_MiscAction_GetList.sql" />
+    <None Include="Sprocs\_ZFW_CRTI_MiscAction_GetRows.sql" />
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Epicor\ICE SDK\CRTI_Build\Deployment\Server\Assemblies\EntityFramework.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Erp.Contracts.BO.CRTI_MiscAction, Version=10.2.400.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Server\Server\Assemblies\Erp.Contracts.BO.CRTI_MiscAction.dll</HintPath>
+    </Reference>
+    <Reference Include="Erp.Contracts.BO.IssueReturn, Version=10.2.400.0, Culture=neutral, PublicKeyToken=5d3fa3c7105d7992, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Server\Server\Assemblies\Erp.Contracts.BO.IssueReturn.dll</HintPath>
+      <Aliases>issueReturnContract</Aliases>
+    </Reference>
+    <Reference Include="Erp.Contracts.BO.JobEntry, Version=10.2.400.0, Culture=neutral, PublicKeyToken=5d3fa3c7105d7992, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Server\Server\Assemblies\Erp.Contracts.BO.JobEntry.dll</HintPath>
+      <Aliases>global,jobentrybo</Aliases>
+    </Reference>
+    <Reference Include="Erp.Contracts.BO.JobManager, Version=10.2.400.0, Culture=neutral, PublicKeyToken=5d3fa3c7105d7992, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Server\Server\Assemblies\Erp.Contracts.BO.JobManager.dll</HintPath>
+    </Reference>
+    <Reference Include="Erp.Contracts.BO.JobStatus, Version=10.2.400.0, Culture=neutral, PublicKeyToken=5d3fa3c7105d7992, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Server\Server\Assemblies\Erp.Contracts.BO.JobStatus.dll</HintPath>
+    </Reference>
+    <Reference Include="Erp.Contracts.BO.Labor, Version=10.2.400.0, Culture=neutral, PublicKeyToken=5d3fa3c7105d7992, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Server\Server\Assemblies\Erp.Contracts.BO.Labor.dll</HintPath>
+    </Reference>
+    <Reference Include="Erp.Contracts.BO.ReceiptsFromMfg, Version=10.2.400.0, Culture=neutral, PublicKeyToken=5d3fa3c7105d7992, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Server\Server\Assemblies\Erp.Contracts.BO.ReceiptsFromMfg.dll</HintPath>
+    </Reference>
+    <Reference Include="Erp.Contracts.BO.ScheduleEngine, Version=10.2.400.0, Culture=neutral, PublicKeyToken=5d3fa3c7105d7992, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Server\Server\Assemblies\Erp.Contracts.BO.ScheduleEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="Erp.Internal.Lib.Shared, Version=10.0.700.0, Culture=neutral, PublicKeyToken=5d3fa3c7105d7992, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Deployment\Server\Assemblies\Erp.Internal.Lib.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ice.Contracts.BO.LangTran, Version=3.0.7.0, Culture=neutral, PublicKeyToken=5d3fa3c7105d7992, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\..\..\epicor\ICE SDK\RL10.0.700\Deployment\Server\Assemblies\Ice.Contracts.BO.LangTran.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ice.Contracts.BO.UD104, Version=3.2.400.0, Culture=neutral, PublicKeyToken=5d3fa3c7105d7992, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Server\Server\Assemblies\Ice.Contracts.BO.UD104.dll</HintPath>
+    </Reference>
+    <Reference Include="Ice.Contracts.BO.UD105, Version=3.2.400.0, Culture=neutral, PublicKeyToken=5d3fa3c7105d7992, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Server\Server\Assemblies\Ice.Contracts.BO.UD105.dll</HintPath>
+    </Reference>
+    <Reference Include="Ice.Lib.Shared, Version=3.0.7.0, Culture=neutral, PublicKeyToken=5d3fa3c7105d7992, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Deployment\Server\Assemblies\Ice.Lib.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Server\Server\Assemblies\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Transactions" />
+    <Compile Include="CRTI_MiscAction.cs" />
+    <Compile Include="CRTI_MiscAction.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRTI_MiscAction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CRTI_MiscAction.Queries.cs" />
+    <Reference Include="Epicor.Ice">
+      <HintPath>..\..\..\..\..\Deployment\Server\Assemblies\Epicor.Ice.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Epicor.ServiceModel">
+      <HintPath>..\..\..\..\..\Deployment\Server\Bin\Epicor.ServiceModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Epicor.System">
+      <HintPath>..\..\..\..\..\Deployment\Server\Bin\Epicor.System.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Epicor.Customization">
+      <HintPath>..\..\..\..\..\Deployment\Server\Assemblies\Epicor.Customization.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Epicor.Customization.Bpm">
+      <HintPath>..\..\..\..\..\Deployment\Server\Assemblies\Epicor.Customization.Bpm.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Erp.Data.910100">
+      <HintPath>..\..\..\..\..\Deployment\Server\Assemblies\Erp.Data.910100.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ice.Data.Model">
+      <HintPath>..\..\..\..\..\Deployment\Server\Assemblies\Ice.Data.Model.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Compile Include="Resources\Strings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Strings.resx</DependentUpon>
+    </Compile>
+    <Reference Include="Erp.Common.ContractInterfaces">
+      <HintPath>..\..\..\..\..\Deployment\Server\Assemblies\Erp.Common.ContractInterfaces.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Strings.resx">
+      <Generator>ICEResXFileCodeGenerator</Generator>
+      <LastGenOutput>Strings.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>..\..\..\..\Epicor.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
